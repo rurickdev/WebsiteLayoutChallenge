@@ -7,20 +7,25 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.8.95/css/materialdesignicons.min.css">
   <title>Document</title>
 </head>
 
 <body>
 
   <!-- Nav, Rurick-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light p-5 bg-dark text-light">
-    <!-- Brand Logo -->
-    <a class="navbar-brand" href="#">Masala</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
+  <nav class="navbar navbar-expand-xl navbar-dark p-5 bg-dark">
+    <!-- Brand Logo -->
+    <img class="pl-5 mb-3"
+      src="http://4.bp.blogspot.com/-X8G4dHG0bUw/UwqnRcbBrSI/AAAAAAAABQY/l496QimBNj8/s1600/site_logo.png" alt="">
+
+    <!-- Drop down of Sections in movil-->
+    <button class="navbar-toggler border border-0" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> Categories
+    </button>
     <!-- Sections -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
@@ -28,33 +33,65 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            Dropdown
+            Categories
           </a>
           <!-- Drop Down Menu -->
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Menu</a>
+            <a class="dropdown-item" href="#">Menu</a>
+            <a class="dropdown-item" href="#">Menu</a>
+            <!-- Sub Drop Down-->
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTwo" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              SubMenu
+              <!-- Drop Down Sub Menu -->
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownTwo">
+                <a class="dropdown-item" href="#">SubMenu</a>
+                <a class="dropdown-item" href="#">subMenu</a>
+              </div>
+            </a>
+
+            <a class="dropdown-item" href="#">Menu</a>
+            <a class="dropdown-item" href="#">Menu</a>
+            <a class="dropdown-item" href="#">Menu</a>
           </div>
         </li>
         <!-- Rest of Sections -->
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Sitemap</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">404 Error</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Purchase</a>
         </li>
       </ul>
+    </div>
+    <!-- Search Form -->
+    <div class="d-flex">
+      <form class="container form-inline my-2 my-lg-0 ">
+        <div class="collapse navbar-collapse" id="navbarSearchForm">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </div>
 
-      <!-- Search Form -->
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <!-- Search Button for lg Screen -->
+        <button class="btn border border-0 bg-primary text-white my-2 my-sm-0 collapse navbar-collapse"
+          id="buuton-hiden" type="submit">
+          <span class="mdi mdi-24px mdi-magnify"></span>
+        </button>
       </form>
     </div>
+
+    <!-- Search Button for sm and md Screens -->
+    <button class="navbar-toggler border border-0 bg-primary text-white" type="button" data-toggle="collapse"
+      data-target="#navbarSearchForm" aria-controls="navbarSearchForm" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="mdi mdi-24px mdi-magnify"></span>
+    </button>
   </nav>
   <!-- Card & Asside, Alejandro-->
 
