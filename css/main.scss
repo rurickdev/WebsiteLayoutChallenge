@@ -20,7 +20,8 @@ footer{
 }
 
 
-h2{
+.bottom-container{
+    h2{
     font-size: 16px;
     padding-bottom: .7em;
      background: url("http://2.bp.blogspot.com/-pdM2M4ONUaA/UwUEFvzCktI/AAAAAAAABNk/o5Lf07Qpd5w/s1600/title-bg.png") repeat-x bottom;
@@ -33,4 +34,6 @@ h2{
     background-size: auto;
     background-origin: padding-box;
     background-clip: border-box;
+}
+
 }
